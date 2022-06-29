@@ -13,12 +13,18 @@ function decrement(){
 function increment(){
     if(currentNumber<10){    
         currentNumber++;
+        if(currentNumber>=0){
+            currentNumberWrapper.style = "color: black";
+        }
         currentNumberWrapper.innerHTML = currentNumber;
     }
 }
 function decrement(){
     if(currentNumber>-10){    
         currentNumber--;
+        if(currentNumber<0){
+            currentNumberWrapper.style = "color : red";
+        }
         currentNumberWrapper.innerHTML = currentNumber;
     }
 }
