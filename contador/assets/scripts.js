@@ -11,12 +11,16 @@ function decrement(){
 }*/
 
 function increment(){
-    currentNumber++;
-    currentNumberWrapper.innerHTML = currentNumber;
+    if(currentNumber<10){    
+        currentNumber++;
+        currentNumberWrapper.innerHTML = currentNumber;
+    }
 }
 function decrement(){
-    currentNumber--;
-    currentNumberWrapper.innerHTML = currentNumber;
+    if(currentNumber>-10){    
+        currentNumber--;
+        currentNumberWrapper.innerHTML = currentNumber;
+    }
 }
 
 var btnMais = document.getElementById("adicionar");
