@@ -11,4 +11,20 @@ function palindromo(string){
         return true;
     }
 }
-console.log(palindromo("abba"));
+//console.log(palindromo("abba"));
+
+//Solução 2
+function palindromo2(string){
+    if(!string){
+        return "String Inexistente"
+    } else{ 
+        let string1=string.split(" ").join("").split("").join("");
+        let string2=string.split(" ").join("").split("").reverse().join("");
+        if(string1===string2){
+            return true;
+        } else{
+            return false;
+        }
+    }
+}
+console.log(palindromo2("roma me tem amor"));
